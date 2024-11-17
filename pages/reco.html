@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recomienda</title>
+    <link rel="icon" href="./images/icon.png">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav>
+        <!--Menú-->
+        <ul>
+            <li>
+                <a href="../index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="../pages/ccdd.html">CD</a>
+            </li>
+            <li>
+                <a href="./vinil.html">Vinyl</a>
+            </li>
+            <li>
+                <a href="./reco.html">Recomienda</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Conenido principal (main)-->
+    <main>
+        <!-- aquí va el form-->
+         <h2>¿Qué otro álbum te gustaría ver en nuestra tienda?</h2>
+         <form>
+            <div>
+                <label for="Aname">Artista</label>
+                <br>
+                <input type="text" name="Aname" id="Aname" placeholder="Nombre del artista">
+            </div>
+            <br> <!-- Salto de línea -->
+            <div>
+               <label for="inputAlbum">Álbum</label>
+               <br>
+               <input type="text" name="inputAlbum" id="inputAlbum" placeholder="Nombre del álbum">
+            </div>
+            <br> <!-- salto de linea -->
+            <div>
+                <label for="gname">Género Musical</label>
+                <br>
+                <select name="gname" id="cname">
+                    <option value="rnb">R&B</option>
+                    <option value="pop">Pop</option>
+                    <option value="hiphop">Hip-Hop</option>
+                    <option value="soul">Soul</option>
+                    <option value="jazz">Jazz</option>
+                    <option value="tecno">Tecno</option>
+                    <option value="rock">Rock</option>
+                    <option value="altpop">Alt pop</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <p>Formato</p>
+                <input type="radio" name="formato" id="cd" value="cd">
+                <label for="cd">CD</label>
+                <br>
+                <input type="radio" name="formato" id="vinyl" value="vinyl">
+                <label for="vinyl">Vinyl</label>
+                <br>
+                <input type="radio" name="formato" id="both" value="both">
+                <label for="both">Ambos</label>
+            </div>
+            <br>
+            <div>
+                <input type="checkbox" name="legalPolicy" id="legalPolicy" value="true">
+                <label for="legalPolicy"> Aceptar términos </label>
+            </div>
+            <div>
+                <input type="checkbox" name="recibirCorreos" id="recibirCorreos" value="true">
+                <label for="recibirCorreos"> Recibir correos? </label>
+            </div>
+            <br>
+            <div>
+                <!-- <input type="submit" value="Sing Up"> -->
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+      </main>
+
+    <hr>
+    <footer>
+        <p>© 2024 Muse & Beats Shop </p>
+      </footer>
+</body>
+</html>
